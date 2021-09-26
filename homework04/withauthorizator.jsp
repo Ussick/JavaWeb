@@ -5,7 +5,6 @@
         session.setAttribute("authorized", null);
     }
     String loginFromSession = (String) session.getAttribute("authorized");
-	out.write("  !!!  "+loginFromSession+"  !!!  ");
     boolean showForm = true;
     if (loginFromSession != null) {
         showForm = false;
